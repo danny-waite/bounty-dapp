@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  oyente:
+    image: luongnguyen/oyente
+    command: /oyente/oyente/oyente.py --remap openzeppelin-solidity/contracts=/app/node_modules/openzeppelin-solidity/contracts -ce -s /app/contracts/BountyRoot.sol
+    volumes: 
+      - .:/app

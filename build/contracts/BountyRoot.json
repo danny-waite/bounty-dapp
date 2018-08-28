@@ -18193,6 +18193,248 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0xa48b7f6d6bbbcc559925fc7b79c198dcfee97702946c0193361174294b103a36": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "bountyId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "BountyPosted",
+          "type": "event"
+        },
+        "0xb3a9f450c901173c138555f9bb18877aee719dbc20566c671e26bacce6d5d41d": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "NewBountyContract",
+          "type": "event"
+        },
+        "0x9ef213230b4b9a18ef1198d83574fa8f0907a5dcb6831377e0b79a38ff62df4a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "bountyId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "submissionId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "payTokens",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "submitter",
+              "type": "address"
+            }
+          ],
+          "name": "AwardedBounty",
+          "type": "event"
+        },
+        "0xa278d33c0a7d7d9b9443f0e9c29afb4c8a2fff4c68475ba0a7b4f2eac12c6f45": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "bountyId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "submissionId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "submissionHash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "payTokens",
+              "type": "bool"
+            }
+          ],
+          "name": "PostedBountySubmission",
+          "type": "event"
+        },
+        "0xd54fcaa98e5275906fb3556a6100ca62167f6698d861c0218c3750980befb92e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "bountyId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "submissionId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "destination",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "SentEtherToWinner",
+          "type": "event"
+        },
+        "0xe2ad56583b05f7b74db1564aa344639ab4478e7dc091acb4ad7060852c38e501": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "bountyId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "submissionId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "destination",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "tokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "exchangeRate",
+              "type": "uint256"
+            }
+          ],
+          "name": "SentTokensToWinner",
+          "type": "event"
+        },
+        "0xf94dbe5c99374e4a661de843452ee4a9bcdd91855ffc9657e6fc7bd544b5c8f8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "message",
+              "type": "uint256"
+            }
+          ],
+          "name": "DebugMessage",
+          "type": "event"
+        },
+        "0x5aa20f0608ed7728bbc487ffe081f94f4ea6fb95a9ac81646b1b3a25cf04ffd9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_address",
+              "type": "address"
+            }
+          ],
+          "name": "SetNewBountyTokenContractAddress",
+          "type": "event"
+        },
+        "0x2cfbb28076854626d3e6258f583977137ff3533496c7e427bcdfcc346940f3ff": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_address",
+              "type": "address"
+            }
+          ],
+          "name": "SetExchangeRateOracleContractAddress",
+          "type": "event"
+        },
+        "0x1ef0188d67c32c542064a0c1381c5fe9c7bdb4ced211420290d5a5bb99157f0a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_sent",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_priceWei",
+              "type": "uint256"
+            }
+          ],
+          "name": "DebugPostBounty",
+          "type": "event"
+        },
+        "0x6985a02210a168e66602d3235cb6db0e70f92b3ba4d376a33c0f3d9434bff625": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "Pause",
+          "type": "event"
+        },
+        "0x7805862f689e2f13df9f062ff482ad3ad112aca9e0847911ed832e158c525b33": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "Unpause",
+          "type": "event"
+        },
+        "0xf8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c64820": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipRenounced",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x49fb287360a3b630a6cb9a10fb1f8693a2eb1dc1",
+      "transactionHash": "0x11f9560e7878944b436915f98f264b1e18b0c770508db3f7788a335f86d92cc8"
+    },
     "4447": {
       "events": {
         "0x5278b827813c739c003eb464afb755c4aba54897f99ddb031249c5b5a82053d9": {
@@ -18449,5 +18691,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-28T11:48:31.094Z"
+  "updatedAt": "2018-08-28T12:01:22.227Z"
 }

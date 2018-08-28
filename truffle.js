@@ -23,17 +23,17 @@ const infuraProviderPrivateKey = (network, privateKey) => providerWithPrivateKey
   `https://${network}.infura.io/${process.env.INFURA_API_KEY}`
 );
 
-const ropstenProvider = process.env.SOLIDITY_COVERAGE
-  ? undefined
-  : infuraProviderPrivateKey('ropsten', process.env.ROPSTEN_PRIVATE_KEY);
+// const ropstenProvider = process.env.SOLIDITY_COVERAGE
+//   ? undefined
+//   : infuraProviderPrivateKey('ropsten', process.env.ROPSTEN_PRIVATE_KEY);
 
 // const ropstenProvider = process.env.SOLIDITY_COVERAGE
 //   ? undefined
 //   : infuraProviderMnemonic('ropsten', process.env.MNEMONIC);
 
-const rinkebyProvider = process.env.SOLIDITY_COVERAGE
-  ? undefined
-  : infuraProviderPrivateKey('rinkeby', process.env.RINKEBY_PRIVATE_KEY);
+// const rinkebyProvider = process.env.SOLIDITY_COVERAGE
+//   ? undefined
+//   : infuraProviderPrivateKey('rinkeby', process.env.RINKEBY_PRIVATE_KEY);
 
 module.exports = {
   networks: {
@@ -47,16 +47,16 @@ module.exports = {
       port: 8545,
       network_id: '*', // eslint-disable-line camelcase
     },
-    ropsten: {
-      provider: ropstenProvider,
-      network_id: 3, // eslint-disable-line camelcase
-      // gasPrice: 476503
-    },
-    rinkeby: {
-      provider: rinkebyProvider,
-      network_id: 4, // eslint-disable-line camelcase
-      // gasPrice: 476503
-    },
+    // ropsten: {
+    //   provider: ropstenProvider,
+    //   network_id: 3, // eslint-disable-line camelcase
+    //   // gasPrice: 476503
+    // },
+    // rinkeby: {
+    //   provider: rinkebyProvider,
+    //   network_id: 4, // eslint-disable-line camelcase
+    //   // gasPrice: 476503
+    // },
     ganache: {
       host: 'localhost',
       port: 8545,

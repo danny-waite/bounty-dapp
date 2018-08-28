@@ -70,3 +70,4 @@ You can run the unit tests with `truffle test --network ganache` or `truffle tes
 * The `ExchangeRateOracleTests` sometimes fail, this is likely due to the oracle bridge not responding in time.
 * I have managed to publish the site using a docker container, since the build process in the react truffle box is broken annoyingly and I only found this out when I came to deploy
 * You may need to reset the Metamask account if you are getting nonce errors
+* For some reason, the tests sometimes fail, the first time you run them, they run fine the second time.  I could not find the issue.

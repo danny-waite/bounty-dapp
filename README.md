@@ -37,8 +37,8 @@ The contacts have been deployed to Rinkeby with the contract addresses contained
 1. `git clone https://github.com/danny-waite/bounty-dapp.git`
 2. `yarn install` or `npm install`
 3. ensure you have truffle installed globally with `npm install -g truffle` 
-4. run `truffle migrate --network ganache` or `truffle develop` depending on which network you choose.
-5. in a new terminal run `npm run bridge-ganache` or `npm run bridge-truffle`, this allows us to test the oracle contract locally. You will likely need to replace Line 30 of `ExchangeRateOracle.sol` with the line given when the bridge has initialised.
+4. run `truffle develop`
+5. in a new terminal run `npm run bridge-truffle`, this allows us to test the oracle contract locally. You will likely need to replace Line 30 of `ExchangeRateOracle.sol` with the line given when the bridge has initialised.
 6. `npm start` this will start the react development web server and should open your browser to http://localhost:3000 you can also use the app at http://128.1.78.11/
 
 ## Testing
@@ -64,10 +64,10 @@ You'll need to ensure you have Metamask installed, I recommend using the latest 
   * See various data from contract including events
 
 ## Unit Tests
-You can run the unit tests with `truffle test --network ganache` or `truffle test`
+You can run the unit tests with `truffle test` SEE LAST NOTE BELOW
 
 ## Notes
 * The `ExchangeRateOracleTests` sometimes fail, this is likely due to the oracle bridge not responding in time.
 * I have managed to publish the site using a docker container, since the build process in the react truffle box is broken annoyingly and I only found this out when I came to deploy
 * You may need to reset the Metamask account if you are getting nonce errors
-* For some reason, the tests sometimes fail, the first time you run them, they run fine the second time.  I could not find the issue.
+* For some reason, the tests sometimes fail, the first time you run them, they run fine the second time.  I could not find the issue.  UPDATE: It appears to be an issue calling web3.eth.getBalance, bizarrely this works the second time around.  Currently investigating further.

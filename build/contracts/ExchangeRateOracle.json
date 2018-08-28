@@ -234,14 +234,14 @@
     "absolutePath": "/Users/danny/Dev/Projects/crypto/consensys/bounty-dapp/contracts/ExchangeRateOracle.sol",
     "exportedSymbols": {
       "ExchangeRateOracle": [
-        826
+        829
       ]
     },
-    "id": 827,
+    "id": 830,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 731,
+        "id": 734,
         "literals": [
           "solidity",
           "^",
@@ -254,10 +254,10 @@
       {
         "absolutePath": "/Users/danny/Dev/Projects/crypto/consensys/bounty-dapp/contracts/oraclize/usingOraclize.sol",
         "file": "./oraclize/usingOraclize.sol",
-        "id": 732,
+        "id": 735,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 6835,
+        "scope": 830,
+        "sourceUnit": 6838,
         "src": "26:38:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -265,10 +265,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
         "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-        "id": 733,
+        "id": 736,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 7047,
+        "scope": 830,
+        "sourceUnit": 7050,
         "src": "65:59:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -276,10 +276,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/lifecycle/Destructible.sol",
         "file": "openzeppelin-solidity/contracts/lifecycle/Destructible.sol",
-        "id": 734,
+        "id": 737,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 6893,
+        "scope": 830,
+        "sourceUnit": 6896,
         "src": "125:68:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -290,17 +290,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 735,
+              "id": 738,
               "name": "usingOraclize",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6834,
+              "referencedDeclaration": 6837,
               "src": "356:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_usingOraclize_$6834",
+                "typeIdentifier": "t_contract$_usingOraclize_$6837",
                 "typeString": "contract usingOraclize"
               }
             },
-            "id": 736,
+            "id": 739,
             "nodeType": "InheritanceSpecifier",
             "src": "356:13:2"
           },
@@ -308,57 +308,57 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 737,
+              "id": 740,
               "name": "Destructible",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6892,
+              "referencedDeclaration": 6895,
               "src": "371:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Destructible_$6892",
+                "typeIdentifier": "t_contract$_Destructible_$6895",
                 "typeString": "contract Destructible"
               }
             },
-            "id": 738,
+            "id": 741,
             "nodeType": "InheritanceSpecifier",
             "src": "371:12:2"
           }
         ],
         "contractDependencies": [
-          6834,
-          6892,
-          7132
+          6837,
+          6895,
+          7135
         ],
         "contractKind": "contract",
         "documentation": "@title ExchangeRateOracle\n@dev The ExchangeRateOracle contract provides the current exchange rate from Ether to MTK",
         "fullyImplemented": true,
-        "id": 826,
+        "id": 829,
         "linearizedBaseContracts": [
-          826,
-          6892,
-          7132,
-          6834
+          829,
+          6895,
+          7135,
+          6837
         ],
         "name": "ExchangeRateOracle",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 741,
+            "id": 744,
             "libraryName": {
               "contractScope": null,
-              "id": 739,
+              "id": 742,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7046,
+              "referencedDeclaration": 7049,
               "src": "397:8:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$7046",
+                "typeIdentifier": "t_contract$_SafeMath_$7049",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "391:27:2",
             "typeName": {
-              "id": 740,
+              "id": 743,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "410:7:2",
@@ -369,23 +369,23 @@
             }
           },
           {
-            "id": 744,
+            "id": 747,
             "libraryName": {
               "contractScope": null,
-              "id": 742,
+              "id": 745,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7046,
+              "referencedDeclaration": 7049,
               "src": "429:8:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$7046",
+                "typeIdentifier": "t_contract$_SafeMath_$7049",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "423:24:2",
             "typeName": {
-              "id": 743,
+              "id": 746,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "442:4:2",
@@ -397,10 +397,10 @@
           },
           {
             "constant": false,
-            "id": 746,
+            "id": 749,
             "name": "exchangeRate",
             "nodeType": "VariableDeclaration",
-            "scope": 826,
+            "scope": 829,
             "src": "453:24:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -409,7 +409,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 745,
+              "id": 748,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "453:4:2",
@@ -423,10 +423,10 @@
           },
           {
             "constant": false,
-            "id": 748,
+            "id": 751,
             "name": "oraclizeId",
             "nodeType": "VariableDeclaration",
-            "scope": 826,
+            "scope": 829,
             "src": "483:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -435,7 +435,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 747,
+              "id": 750,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "483:7:2",
@@ -450,20 +450,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 752,
+            "id": 755,
             "name": "LogConstructorInitiated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 751,
+              "id": 754,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 750,
+                  "id": 753,
                   "indexed": false,
                   "name": "message",
                   "nodeType": "VariableDeclaration",
-                  "scope": 752,
+                  "scope": 755,
                   "src": "545:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -472,7 +472,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 749,
+                    "id": 752,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "545:6:2",
@@ -492,20 +492,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 756,
+            "id": 759,
             "name": "LogPriceUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 755,
+              "id": 758,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 754,
+                  "id": 757,
                   "indexed": false,
                   "name": "exchangeRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 756,
+                  "scope": 759,
                   "src": "588:17:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -514,7 +514,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 753,
+                    "id": 756,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "588:4:2",
@@ -534,20 +534,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 760,
+            "id": 763,
             "name": "LogNewOraclizeQuery",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 759,
+              "id": 762,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 758,
+                  "id": 761,
                   "indexed": false,
                   "name": "description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 760,
+                  "scope": 763,
                   "src": "638:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -556,7 +556,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 757,
+                    "id": 760,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "638:6:2",
@@ -575,13 +575,13 @@
           },
           {
             "body": {
-              "id": 763,
+              "id": 766,
               "nodeType": "Block",
               "src": "701:29:2",
               "statements": []
             },
             "documentation": null,
-            "id": 764,
+            "id": 767,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -589,19 +589,19 @@
             "name": "deposit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 761,
+              "id": 764,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "681:2:2"
             },
             "payable": true,
             "returnParameters": {
-              "id": 762,
+              "id": 765,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "701:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "665:65:2",
             "stateMutability": "payable",
             "superFunction": null,
@@ -609,25 +609,25 @@
           },
           {
             "body": {
-              "id": 783,
+              "id": 786,
               "nodeType": "Block",
               "src": "909:278:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 771,
+                    "id": 774,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 769,
+                      "id": 772,
                       "name": "exchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 749,
                       "src": "919:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -638,11 +638,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 770,
+                      "id": 773,
                       "name": "_initialExchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 766,
+                      "referencedDeclaration": 769,
                       "src": "934:20:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -655,28 +655,28 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 772,
+                  "id": 775,
                   "nodeType": "ExpressionStatement",
                   "src": "919:35:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 777,
+                    "id": 780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 773,
+                      "id": 776,
                       "name": "OAR",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1534,
+                      "referencedDeclaration": 1537,
                       "src": "964:3:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                         "typeString": "contract OraclizeAddrResolverI"
                       }
                     },
@@ -688,7 +688,7 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "307836663438354338424636666334336541323132453933424246386365303436433766316362343735",
-                          "id": 775,
+                          "id": 778,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -711,18 +711,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 774,
+                        "id": 777,
                         "name": "OraclizeAddrResolverI",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 944,
+                        "referencedDeclaration": 947,
                         "src": "970:21:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_OraclizeAddrResolverI_$944_$",
+                          "typeIdentifier": "t_type$_t_contract$_OraclizeAddrResolverI_$947_$",
                           "typeString": "type(contract OraclizeAddrResolverI)"
                         }
                       },
-                      "id": 776,
+                      "id": 779,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -732,17 +732,17 @@
                       "nodeType": "FunctionCall",
                       "src": "970:65:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                         "typeString": "contract OraclizeAddrResolverI"
                       }
                     },
                     "src": "964:71:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                      "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                       "typeString": "contract OraclizeAddrResolverI"
                     }
                   },
-                  "id": 778,
+                  "id": 781,
                   "nodeType": "ExpressionStatement",
                   "src": "964:71:2"
                 },
@@ -753,7 +753,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "436f6e7374727563746f722077617320696e697469617465642e2043616c6c2027757064617465507269636528292720746f2073656e6420746865204f7261636c697a652051756572792e",
-                        "id": 780,
+                        "id": 783,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -776,18 +776,18 @@
                           "typeString": "literal_string \"Constructor was initiated. Call 'updatePrice()' to send the Oraclize Query.\""
                         }
                       ],
-                      "id": 779,
+                      "id": 782,
                       "name": "LogConstructorInitiated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 752,
+                      "referencedDeclaration": 755,
                       "src": "1078:23:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 781,
+                    "id": 784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -801,14 +801,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 782,
+                  "id": 785,
                   "nodeType": "EmitStatement",
                   "src": "1073:107:2"
                 }
               ]
             },
             "documentation": "@dev Initialises new oracle with the initial exchange rate and the Oracle Address Resolver for debugging",
-            "id": 784,
+            "id": 787,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -816,15 +816,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 767,
+              "id": 770,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 766,
+                  "id": 769,
                   "name": "_initialExchangeRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 784,
+                  "scope": 787,
                   "src": "875:25:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -833,7 +833,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 765,
+                    "id": 768,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "875:4:2",
@@ -850,12 +850,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 768,
+              "id": 771,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "909:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "863:324:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -863,7 +863,7 @@
           },
           {
             "body": {
-              "id": 811,
+              "id": 814,
               "nodeType": "Block",
               "src": "1456:153:2",
               "statements": [
@@ -874,7 +874,7 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 795,
+                    "id": 798,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -883,18 +883,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 791,
+                        "id": 794,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7701,
+                        "referencedDeclaration": 7704,
                         "src": "1470:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 792,
+                      "id": 795,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -915,18 +915,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 793,
+                        "id": 796,
                         "name": "oraclize_cbAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4807,
+                        "referencedDeclaration": 4810,
                         "src": "1484:18:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_address_$",
                           "typeString": "function () returns (address)"
                         }
                       },
-                      "id": 794,
+                      "id": 797,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -947,7 +947,7 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 799,
+                  "id": 802,
                   "nodeType": "IfStatement",
                   "src": "1466:48:2",
                   "trueBody": {
@@ -956,21 +956,21 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 796,
+                        "id": 799,
                         "name": "revert",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [
-                          7706,
-                          7707
+                          7709,
+                          7710
                         ],
-                        "referencedDeclaration": 7706,
+                        "referencedDeclaration": 7709,
                         "src": "1506:6:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_revert_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 797,
+                      "id": 800,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -984,7 +984,7 @@
                         "typeString": "tuple()"
                       }
                     },
-                    "id": 798,
+                    "id": 801,
                     "nodeType": "ExpressionStatement",
                     "src": "1506:8:2"
                   }
@@ -992,18 +992,18 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 805,
+                    "id": 808,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 800,
+                      "id": 803,
                       "name": "exchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 749,
                       "src": "1524:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1017,11 +1017,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 802,
+                          "id": 805,
                           "name": "result",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 788,
+                          "referencedDeclaration": 791,
                           "src": "1548:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -1031,7 +1031,7 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "38",
-                          "id": 803,
+                          "id": 806,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1058,21 +1058,21 @@
                             "typeString": "int_const 8"
                           }
                         ],
-                        "id": 801,
+                        "id": 804,
                         "name": "parseInt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [
-                          5485,
-                          5584
+                          5488,
+                          5587
                         ],
-                        "referencedDeclaration": 5584,
+                        "referencedDeclaration": 5587,
                         "src": "1539:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                           "typeString": "function (string memory,uint256) pure returns (uint256)"
                         }
                       },
-                      "id": 804,
+                      "id": 807,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1092,7 +1092,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 806,
+                  "id": 809,
                   "nodeType": "ExpressionStatement",
                   "src": "1524:34:2"
                 },
@@ -1102,11 +1102,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 808,
+                        "id": 811,
                         "name": "exchangeRate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 746,
+                        "referencedDeclaration": 749,
                         "src": "1589:12:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1121,18 +1121,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 807,
+                      "id": 810,
                       "name": "LogPriceUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 756,
+                      "referencedDeclaration": 759,
                       "src": "1573:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 809,
+                    "id": 812,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1146,14 +1146,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 810,
+                  "id": 813,
                   "nodeType": "EmitStatement",
                   "src": "1568:34:2"
                 }
               ]
             },
             "documentation": "@dev the callback function is called when the oracle provides the requested information\n@param id the id for the specific update request\n@param result the result of the query",
-            "id": 812,
+            "id": 815,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1161,15 +1161,15 @@
             "name": "__callback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 789,
+              "id": 792,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 786,
+                  "id": 789,
                   "name": "id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 812,
+                  "scope": 815,
                   "src": "1422:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1178,7 +1178,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 785,
+                    "id": 788,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1422:7:2",
@@ -1192,10 +1192,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 788,
+                  "id": 791,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 812,
+                  "scope": 815,
                   "src": "1434:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1204,7 +1204,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 787,
+                    "id": 790,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1434:6:2",
@@ -1221,20 +1221,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 790,
+              "id": 793,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1456:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "1402:207:2",
             "stateMutability": "nonpayable",
-            "superFunction": 1749,
+            "superFunction": 1752,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 824,
+              "id": 827,
               "nodeType": "Block",
               "src": "1709:421:2",
               "statements": [
@@ -1245,7 +1245,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f7261636c697a65207175657279207761732073656e742c207374616e64696e6720627920666f722074686520616e737765722e2e",
-                        "id": 816,
+                        "id": 819,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1268,18 +1268,18 @@
                           "typeString": "literal_string \"Oraclize query was sent, standing by for the answer..\""
                         }
                       ],
-                      "id": 815,
+                      "id": 818,
                       "name": "LogNewOraclizeQuery",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 760,
+                      "referencedDeclaration": 763,
                       "src": "1926:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 817,
+                    "id": 820,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1293,7 +1293,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 818,
+                  "id": 821,
                   "nodeType": "EmitStatement",
                   "src": "1921:81:2"
                 },
@@ -1304,7 +1304,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "55524c",
-                        "id": 820,
+                        "id": 823,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1322,7 +1322,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6a736f6e2868747470733a2f2f6170692e62696e616e63652e636f6d2f6170692f76332f7469636b65722f70726963653f73796d626f6c3d524550455448292e7072696365",
-                        "id": 821,
+                        "id": 824,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1349,75 +1349,75 @@
                           "typeString": "literal_string \"json(https://api.binance.com/api/v3/ticker/price?symbol=REPETH).price\""
                         }
                       ],
-                      "id": 819,
+                      "id": 822,
                       "name": "oraclize_query",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1839,
-                        1881,
-                        1927,
-                        1971,
-                        2014,
-                        2059,
-                        2108,
-                        2155,
-                        2202,
-                        2251,
-                        2304,
-                        2355,
-                        2392,
-                        2432,
-                        2475,
-                        2515,
-                        2560,
-                        2608,
-                        2659,
-                        2707,
-                        2760,
-                        2816,
-                        2875,
-                        2931,
-                        2992,
-                        3056,
-                        3123,
-                        3187,
-                        3256,
-                        3328,
-                        3403,
-                        3475,
-                        3522,
-                        3571,
-                        3624,
-                        3675,
-                        3712,
-                        3752,
-                        3795,
-                        3835,
-                        3880,
-                        3928,
-                        3979,
-                        4027,
-                        4080,
-                        4136,
-                        4195,
-                        4251,
-                        4312,
-                        4376,
-                        4443,
-                        4507,
-                        4576,
-                        4648,
-                        4723,
-                        4795
+                        1842,
+                        1884,
+                        1930,
+                        1974,
+                        2017,
+                        2062,
+                        2111,
+                        2158,
+                        2205,
+                        2254,
+                        2307,
+                        2358,
+                        2395,
+                        2435,
+                        2478,
+                        2518,
+                        2563,
+                        2611,
+                        2662,
+                        2710,
+                        2763,
+                        2819,
+                        2878,
+                        2934,
+                        2995,
+                        3059,
+                        3126,
+                        3190,
+                        3259,
+                        3331,
+                        3406,
+                        3478,
+                        3525,
+                        3574,
+                        3627,
+                        3678,
+                        3715,
+                        3755,
+                        3798,
+                        3838,
+                        3883,
+                        3931,
+                        3982,
+                        4030,
+                        4083,
+                        4139,
+                        4198,
+                        4254,
+                        4315,
+                        4379,
+                        4446,
+                        4510,
+                        4579,
+                        4651,
+                        4726,
+                        4798
                       ],
-                      "referencedDeclaration": 1839,
+                      "referencedDeclaration": 1842,
                       "src": "2016:14:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$_t_bytes32_$",
                         "typeString": "function (string memory,string memory) returns (bytes32)"
                       }
                     },
-                    "id": 822,
+                    "id": 825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1431,14 +1431,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 823,
+                  "id": 826,
                   "nodeType": "ExpressionStatement",
                   "src": "2016:94:2"
                 }
               ]
             },
             "documentation": "@dev initialised an price update",
-            "id": 825,
+            "id": 828,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1446,26 +1446,26 @@
             "name": "updatePrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 813,
+              "id": 816,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1691:2:2"
             },
             "payable": true,
             "returnParameters": {
-              "id": 814,
+              "id": 817,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1709:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "1671:459:2",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 827,
+        "scope": 830,
         "src": "325:1807:2"
       }
     ],
@@ -1475,14 +1475,14 @@
     "absolutePath": "/Users/danny/Dev/Projects/crypto/consensys/bounty-dapp/contracts/ExchangeRateOracle.sol",
     "exportedSymbols": {
       "ExchangeRateOracle": [
-        826
+        829
       ]
     },
-    "id": 827,
+    "id": 830,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 731,
+        "id": 734,
         "literals": [
           "solidity",
           "^",
@@ -1495,10 +1495,10 @@
       {
         "absolutePath": "/Users/danny/Dev/Projects/crypto/consensys/bounty-dapp/contracts/oraclize/usingOraclize.sol",
         "file": "./oraclize/usingOraclize.sol",
-        "id": 732,
+        "id": 735,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 6835,
+        "scope": 830,
+        "sourceUnit": 6838,
         "src": "26:38:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1506,10 +1506,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/math/SafeMath.sol",
         "file": "openzeppelin-solidity/contracts/math/SafeMath.sol",
-        "id": 733,
+        "id": 736,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 7047,
+        "scope": 830,
+        "sourceUnit": 7050,
         "src": "65:59:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1517,10 +1517,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/lifecycle/Destructible.sol",
         "file": "openzeppelin-solidity/contracts/lifecycle/Destructible.sol",
-        "id": 734,
+        "id": 737,
         "nodeType": "ImportDirective",
-        "scope": 827,
-        "sourceUnit": 6893,
+        "scope": 830,
+        "sourceUnit": 6896,
         "src": "125:68:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1531,17 +1531,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 735,
+              "id": 738,
               "name": "usingOraclize",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6834,
+              "referencedDeclaration": 6837,
               "src": "356:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_usingOraclize_$6834",
+                "typeIdentifier": "t_contract$_usingOraclize_$6837",
                 "typeString": "contract usingOraclize"
               }
             },
-            "id": 736,
+            "id": 739,
             "nodeType": "InheritanceSpecifier",
             "src": "356:13:2"
           },
@@ -1549,57 +1549,57 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 737,
+              "id": 740,
               "name": "Destructible",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6892,
+              "referencedDeclaration": 6895,
               "src": "371:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Destructible_$6892",
+                "typeIdentifier": "t_contract$_Destructible_$6895",
                 "typeString": "contract Destructible"
               }
             },
-            "id": 738,
+            "id": 741,
             "nodeType": "InheritanceSpecifier",
             "src": "371:12:2"
           }
         ],
         "contractDependencies": [
-          6834,
-          6892,
-          7132
+          6837,
+          6895,
+          7135
         ],
         "contractKind": "contract",
         "documentation": "@title ExchangeRateOracle\n@dev The ExchangeRateOracle contract provides the current exchange rate from Ether to MTK",
         "fullyImplemented": true,
-        "id": 826,
+        "id": 829,
         "linearizedBaseContracts": [
-          826,
-          6892,
-          7132,
-          6834
+          829,
+          6895,
+          7135,
+          6837
         ],
         "name": "ExchangeRateOracle",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 741,
+            "id": 744,
             "libraryName": {
               "contractScope": null,
-              "id": 739,
+              "id": 742,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7046,
+              "referencedDeclaration": 7049,
               "src": "397:8:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$7046",
+                "typeIdentifier": "t_contract$_SafeMath_$7049",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "391:27:2",
             "typeName": {
-              "id": 740,
+              "id": 743,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "410:7:2",
@@ -1610,23 +1610,23 @@
             }
           },
           {
-            "id": 744,
+            "id": 747,
             "libraryName": {
               "contractScope": null,
-              "id": 742,
+              "id": 745,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7046,
+              "referencedDeclaration": 7049,
               "src": "429:8:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$7046",
+                "typeIdentifier": "t_contract$_SafeMath_$7049",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "423:24:2",
             "typeName": {
-              "id": 743,
+              "id": 746,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "442:4:2",
@@ -1638,10 +1638,10 @@
           },
           {
             "constant": false,
-            "id": 746,
+            "id": 749,
             "name": "exchangeRate",
             "nodeType": "VariableDeclaration",
-            "scope": 826,
+            "scope": 829,
             "src": "453:24:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1650,7 +1650,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 745,
+              "id": 748,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "453:4:2",
@@ -1664,10 +1664,10 @@
           },
           {
             "constant": false,
-            "id": 748,
+            "id": 751,
             "name": "oraclizeId",
             "nodeType": "VariableDeclaration",
-            "scope": 826,
+            "scope": 829,
             "src": "483:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1676,7 +1676,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 747,
+              "id": 750,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "483:7:2",
@@ -1691,20 +1691,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 752,
+            "id": 755,
             "name": "LogConstructorInitiated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 751,
+              "id": 754,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 750,
+                  "id": 753,
                   "indexed": false,
                   "name": "message",
                   "nodeType": "VariableDeclaration",
-                  "scope": 752,
+                  "scope": 755,
                   "src": "545:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1713,7 +1713,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 749,
+                    "id": 752,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "545:6:2",
@@ -1733,20 +1733,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 756,
+            "id": 759,
             "name": "LogPriceUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 755,
+              "id": 758,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 754,
+                  "id": 757,
                   "indexed": false,
                   "name": "exchangeRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 756,
+                  "scope": 759,
                   "src": "588:17:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1755,7 +1755,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 753,
+                    "id": 756,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "588:4:2",
@@ -1775,20 +1775,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 760,
+            "id": 763,
             "name": "LogNewOraclizeQuery",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 759,
+              "id": 762,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 758,
+                  "id": 761,
                   "indexed": false,
                   "name": "description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 760,
+                  "scope": 763,
                   "src": "638:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1797,7 +1797,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 757,
+                    "id": 760,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "638:6:2",
@@ -1816,13 +1816,13 @@
           },
           {
             "body": {
-              "id": 763,
+              "id": 766,
               "nodeType": "Block",
               "src": "701:29:2",
               "statements": []
             },
             "documentation": null,
-            "id": 764,
+            "id": 767,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1830,19 +1830,19 @@
             "name": "deposit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 761,
+              "id": 764,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "681:2:2"
             },
             "payable": true,
             "returnParameters": {
-              "id": 762,
+              "id": 765,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "701:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "665:65:2",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1850,25 +1850,25 @@
           },
           {
             "body": {
-              "id": 783,
+              "id": 786,
               "nodeType": "Block",
               "src": "909:278:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 771,
+                    "id": 774,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 769,
+                      "id": 772,
                       "name": "exchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 749,
                       "src": "919:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1879,11 +1879,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 770,
+                      "id": 773,
                       "name": "_initialExchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 766,
+                      "referencedDeclaration": 769,
                       "src": "934:20:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1896,28 +1896,28 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 772,
+                  "id": 775,
                   "nodeType": "ExpressionStatement",
                   "src": "919:35:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 777,
+                    "id": 780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 773,
+                      "id": 776,
                       "name": "OAR",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1534,
+                      "referencedDeclaration": 1537,
                       "src": "964:3:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                         "typeString": "contract OraclizeAddrResolverI"
                       }
                     },
@@ -1929,7 +1929,7 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "307836663438354338424636666334336541323132453933424246386365303436433766316362343735",
-                          "id": 775,
+                          "id": 778,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1952,18 +1952,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 774,
+                        "id": 777,
                         "name": "OraclizeAddrResolverI",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 944,
+                        "referencedDeclaration": 947,
                         "src": "970:21:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_OraclizeAddrResolverI_$944_$",
+                          "typeIdentifier": "t_type$_t_contract$_OraclizeAddrResolverI_$947_$",
                           "typeString": "type(contract OraclizeAddrResolverI)"
                         }
                       },
-                      "id": 776,
+                      "id": 779,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1973,17 +1973,17 @@
                       "nodeType": "FunctionCall",
                       "src": "970:65:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                        "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                         "typeString": "contract OraclizeAddrResolverI"
                       }
                     },
                     "src": "964:71:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$944",
+                      "typeIdentifier": "t_contract$_OraclizeAddrResolverI_$947",
                       "typeString": "contract OraclizeAddrResolverI"
                     }
                   },
-                  "id": 778,
+                  "id": 781,
                   "nodeType": "ExpressionStatement",
                   "src": "964:71:2"
                 },
@@ -1994,7 +1994,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "436f6e7374727563746f722077617320696e697469617465642e2043616c6c2027757064617465507269636528292720746f2073656e6420746865204f7261636c697a652051756572792e",
-                        "id": 780,
+                        "id": 783,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2017,18 +2017,18 @@
                           "typeString": "literal_string \"Constructor was initiated. Call 'updatePrice()' to send the Oraclize Query.\""
                         }
                       ],
-                      "id": 779,
+                      "id": 782,
                       "name": "LogConstructorInitiated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 752,
+                      "referencedDeclaration": 755,
                       "src": "1078:23:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 781,
+                    "id": 784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2042,14 +2042,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 782,
+                  "id": 785,
                   "nodeType": "EmitStatement",
                   "src": "1073:107:2"
                 }
               ]
             },
             "documentation": "@dev Initialises new oracle with the initial exchange rate and the Oracle Address Resolver for debugging",
-            "id": 784,
+            "id": 787,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -2057,15 +2057,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 767,
+              "id": 770,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 766,
+                  "id": 769,
                   "name": "_initialExchangeRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 784,
+                  "scope": 787,
                   "src": "875:25:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2074,7 +2074,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 765,
+                    "id": 768,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "875:4:2",
@@ -2091,12 +2091,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 768,
+              "id": 771,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "909:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "863:324:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2104,7 +2104,7 @@
           },
           {
             "body": {
-              "id": 811,
+              "id": 814,
               "nodeType": "Block",
               "src": "1456:153:2",
               "statements": [
@@ -2115,7 +2115,7 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 795,
+                    "id": 798,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2124,18 +2124,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 791,
+                        "id": 794,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7701,
+                        "referencedDeclaration": 7704,
                         "src": "1470:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 792,
+                      "id": 795,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2156,18 +2156,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 793,
+                        "id": 796,
                         "name": "oraclize_cbAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4807,
+                        "referencedDeclaration": 4810,
                         "src": "1484:18:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_address_$",
                           "typeString": "function () returns (address)"
                         }
                       },
-                      "id": 794,
+                      "id": 797,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2188,7 +2188,7 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 799,
+                  "id": 802,
                   "nodeType": "IfStatement",
                   "src": "1466:48:2",
                   "trueBody": {
@@ -2197,21 +2197,21 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 796,
+                        "id": 799,
                         "name": "revert",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [
-                          7706,
-                          7707
+                          7709,
+                          7710
                         ],
-                        "referencedDeclaration": 7706,
+                        "referencedDeclaration": 7709,
                         "src": "1506:6:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_revert_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 797,
+                      "id": 800,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2225,7 +2225,7 @@
                         "typeString": "tuple()"
                       }
                     },
-                    "id": 798,
+                    "id": 801,
                     "nodeType": "ExpressionStatement",
                     "src": "1506:8:2"
                   }
@@ -2233,18 +2233,18 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 805,
+                    "id": 808,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 800,
+                      "id": 803,
                       "name": "exchangeRate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 749,
                       "src": "1524:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2258,11 +2258,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 802,
+                          "id": 805,
                           "name": "result",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 788,
+                          "referencedDeclaration": 791,
                           "src": "1548:6:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -2272,7 +2272,7 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "38",
-                          "id": 803,
+                          "id": 806,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2299,21 +2299,21 @@
                             "typeString": "int_const 8"
                           }
                         ],
-                        "id": 801,
+                        "id": 804,
                         "name": "parseInt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [
-                          5485,
-                          5584
+                          5488,
+                          5587
                         ],
-                        "referencedDeclaration": 5584,
+                        "referencedDeclaration": 5587,
                         "src": "1539:8:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                           "typeString": "function (string memory,uint256) pure returns (uint256)"
                         }
                       },
-                      "id": 804,
+                      "id": 807,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2333,7 +2333,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 806,
+                  "id": 809,
                   "nodeType": "ExpressionStatement",
                   "src": "1524:34:2"
                 },
@@ -2343,11 +2343,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 808,
+                        "id": 811,
                         "name": "exchangeRate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 746,
+                        "referencedDeclaration": 749,
                         "src": "1589:12:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2362,18 +2362,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 807,
+                      "id": 810,
                       "name": "LogPriceUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 756,
+                      "referencedDeclaration": 759,
                       "src": "1573:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 809,
+                    "id": 812,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2387,14 +2387,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 810,
+                  "id": 813,
                   "nodeType": "EmitStatement",
                   "src": "1568:34:2"
                 }
               ]
             },
             "documentation": "@dev the callback function is called when the oracle provides the requested information\n@param id the id for the specific update request\n@param result the result of the query",
-            "id": 812,
+            "id": 815,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2402,15 +2402,15 @@
             "name": "__callback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 789,
+              "id": 792,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 786,
+                  "id": 789,
                   "name": "id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 812,
+                  "scope": 815,
                   "src": "1422:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2419,7 +2419,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 785,
+                    "id": 788,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1422:7:2",
@@ -2433,10 +2433,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 788,
+                  "id": 791,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 812,
+                  "scope": 815,
                   "src": "1434:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2445,7 +2445,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 787,
+                    "id": 790,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1434:6:2",
@@ -2462,20 +2462,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 790,
+              "id": 793,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1456:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "1402:207:2",
             "stateMutability": "nonpayable",
-            "superFunction": 1749,
+            "superFunction": 1752,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 824,
+              "id": 827,
               "nodeType": "Block",
               "src": "1709:421:2",
               "statements": [
@@ -2486,7 +2486,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f7261636c697a65207175657279207761732073656e742c207374616e64696e6720627920666f722074686520616e737765722e2e",
-                        "id": 816,
+                        "id": 819,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2509,18 +2509,18 @@
                           "typeString": "literal_string \"Oraclize query was sent, standing by for the answer..\""
                         }
                       ],
-                      "id": 815,
+                      "id": 818,
                       "name": "LogNewOraclizeQuery",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 760,
+                      "referencedDeclaration": 763,
                       "src": "1926:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 817,
+                    "id": 820,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2534,7 +2534,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 818,
+                  "id": 821,
                   "nodeType": "EmitStatement",
                   "src": "1921:81:2"
                 },
@@ -2545,7 +2545,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "55524c",
-                        "id": 820,
+                        "id": 823,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2563,7 +2563,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6a736f6e2868747470733a2f2f6170692e62696e616e63652e636f6d2f6170692f76332f7469636b65722f70726963653f73796d626f6c3d524550455448292e7072696365",
-                        "id": 821,
+                        "id": 824,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2590,75 +2590,75 @@
                           "typeString": "literal_string \"json(https://api.binance.com/api/v3/ticker/price?symbol=REPETH).price\""
                         }
                       ],
-                      "id": 819,
+                      "id": 822,
                       "name": "oraclize_query",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1839,
-                        1881,
-                        1927,
-                        1971,
-                        2014,
-                        2059,
-                        2108,
-                        2155,
-                        2202,
-                        2251,
-                        2304,
-                        2355,
-                        2392,
-                        2432,
-                        2475,
-                        2515,
-                        2560,
-                        2608,
-                        2659,
-                        2707,
-                        2760,
-                        2816,
-                        2875,
-                        2931,
-                        2992,
-                        3056,
-                        3123,
-                        3187,
-                        3256,
-                        3328,
-                        3403,
-                        3475,
-                        3522,
-                        3571,
-                        3624,
-                        3675,
-                        3712,
-                        3752,
-                        3795,
-                        3835,
-                        3880,
-                        3928,
-                        3979,
-                        4027,
-                        4080,
-                        4136,
-                        4195,
-                        4251,
-                        4312,
-                        4376,
-                        4443,
-                        4507,
-                        4576,
-                        4648,
-                        4723,
-                        4795
+                        1842,
+                        1884,
+                        1930,
+                        1974,
+                        2017,
+                        2062,
+                        2111,
+                        2158,
+                        2205,
+                        2254,
+                        2307,
+                        2358,
+                        2395,
+                        2435,
+                        2478,
+                        2518,
+                        2563,
+                        2611,
+                        2662,
+                        2710,
+                        2763,
+                        2819,
+                        2878,
+                        2934,
+                        2995,
+                        3059,
+                        3126,
+                        3190,
+                        3259,
+                        3331,
+                        3406,
+                        3478,
+                        3525,
+                        3574,
+                        3627,
+                        3678,
+                        3715,
+                        3755,
+                        3798,
+                        3838,
+                        3883,
+                        3931,
+                        3982,
+                        4030,
+                        4083,
+                        4139,
+                        4198,
+                        4254,
+                        4315,
+                        4379,
+                        4446,
+                        4510,
+                        4579,
+                        4651,
+                        4726,
+                        4798
                       ],
-                      "referencedDeclaration": 1839,
+                      "referencedDeclaration": 1842,
                       "src": "2016:14:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$_t_bytes32_$",
                         "typeString": "function (string memory,string memory) returns (bytes32)"
                       }
                     },
-                    "id": 822,
+                    "id": 825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2672,14 +2672,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 823,
+                  "id": 826,
                   "nodeType": "ExpressionStatement",
                   "src": "2016:94:2"
                 }
               ]
             },
             "documentation": "@dev initialised an price update",
-            "id": 825,
+            "id": 828,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2687,26 +2687,26 @@
             "name": "updatePrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 813,
+              "id": 816,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1691:2:2"
             },
             "payable": true,
             "returnParameters": {
-              "id": 814,
+              "id": 817,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1709:0:2"
             },
-            "scope": 826,
+            "scope": 829,
             "src": "1671:459:2",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 827,
+        "scope": 830,
         "src": "325:1807:2"
       }
     ],
@@ -2720,10 +2720,10 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x2445bc665aefca58d2137baf26a62edb38cbc274",
-      "transactionHash": "0xa5930a7573abc864fc628206db6f2d289d251d6244982e8d5cb581e33f694d49"
+      "address": "0x62227531b82259561cc9ad4413188f08e536598a",
+      "transactionHash": "0xf1160413ac8259dcb61e964a50e0d0f205cce912efcac8e183bab0af24f89277"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-28T10:59:42.022Z"
+  "updatedAt": "2018-08-28T11:48:31.087Z"
 }

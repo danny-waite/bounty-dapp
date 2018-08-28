@@ -53,6 +53,9 @@ class ViewBounty extends Component {
         const { awardBounty } = this.props;
 
         const awardResult = await awardBounty(bountyId, submissionId);
+
+        //TODO: nasty hack
+        window.location.reload();
     }
 
     render() {
@@ -68,7 +71,7 @@ class ViewBounty extends Component {
                     <PostSubmissionModal 
                         title="Submit Entry" 
                         buttonText="Submit Entry" 
-                        showButton={ bounty.poster !== account }
+                        showButton={ bounty.poster !== account && bounty.status === "Open" }
                         onSubmit={this.postSubmission}
                         refreshSubmissions={() => this.getSubmissions(bounty.id) }
                     />
@@ -83,6 +86,7 @@ class ViewBounty extends Component {
                     <h4>Escrow {escrowAmount} ETH</h4>
                     <h4>Submitter {bounty.poster}</h4>
                     <h4>Status {bounty.status}</h4>
+                    {bounty.status === "Completed" && <h4>Winner {bounty.winner}</h4>}
                 </Segment>
                 <Segment>
                     <BountySubmissionsList bountyId={bounty.id} data={submissions} awardHandler={this.awardHandler} showAward={ showAward } />

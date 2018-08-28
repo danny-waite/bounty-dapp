@@ -69,3 +69,4 @@ You can run the unit tests with `truffle test --network ganache` or `truffle tes
 ## Notes
 * The `ExchangeRateOracleTests` sometimes fail, this is likely due to the oracle bridge not responding in time.
 * Annoyingly the react truffle box errors when I try to build the project, to deploy to a public server, I will continue working on this after submission.
+* You may need to reset the Metamask account if you are getting nonce errors

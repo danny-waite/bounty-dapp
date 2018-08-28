@@ -47,7 +47,7 @@ contract BountyRoot is Pausable, Destructible, ReentrancyGuard {
 
     event BountyPosted(uint256 bountyId, uint amount);
     event NewBountyContract();
-    event AwardedBounty(uint256 bountyId, uint256 submissionId, bool payTokens);
+    event AwardedBounty(uint256 bountyId, uint256 submissionId, bool payTokens, address submitter);
     event PostedBountySubmission(uint256 bountyId, uint256 submissionId, string submissionHash, bool payTokens);
     event SentEtherToWinner(uint256 bountyId, uint256 submissionId, address destination, uint amount);
     event SentTokensToWinner(uint256 bountyId, uint256 submissionId, address destination, uint amount, uint256 tokenAmount, uint exchangeRate);
@@ -256,6 +256,7 @@ contract BountyRoot is Pausable, Destructible, ReentrancyGuard {
         uint currentBalance = bountyBalances[_bountyId];
         uint prizeWei = prize.mul(1000000000000000000);
 
+        //TOD: ensure enough eth has been sent
         // require(currentBalance == prizeWei, "eth balance should equal the prize");
   
         bool payTokens = bountySubmissions[_bountyId].submissions[_submissionId].payTokens;
@@ -276,7 +277,7 @@ contract BountyRoot is Pausable, Destructible, ReentrancyGuard {
             emit SentEtherToWinner(_bountyId, _submissionId, submitter, bounty.prize);
         }
 
-        emit AwardedBounty(_bountyId, _submissionId, payTokens);
+        emit AwardedBounty(_bountyId, _submissionId, payTokens, submitter) ;
     }
 
     /**
@@ -288,6 +289,9 @@ contract BountyRoot is Pausable, Destructible, ReentrancyGuard {
         bountyTokenContract.transferFrom(this, _to, _amount);
     }
 
+    /**
+     * @dev get the current exchange rate from oracle
+     */
     function getExchangeRate() public view returns (uint) {
         return exchangeRateOracleContract.exchangeRate();
     }

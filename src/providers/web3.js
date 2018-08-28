@@ -234,10 +234,15 @@ export class Web3Provider extends Component {
         const { contractBountyRoot, account, web3 } = this.state;
 
         const bounty = await this.getBounty(bountyId);
-        const valueToPost = bounty.escrow ? web3.utils.toWei(bounty.prize, "ether") : 0;
+        let escrowAmount = await this.getBountyEscrow(bountyId);
+        escrowAmount = web3.utils.toWei(escrowAmount, "ether");
+        const requiredBounty = web3.utils.toWei(bounty.prize, "ether");
+
+        const valueToPost = requiredBounty - escrowAmount;
 
         const response = await contractBountyRoot.awardBounty(bountyId, submissionId, { from: account, value: valueToPost });
         return response;
+
     }
 
     getExchangeRate = async () => {

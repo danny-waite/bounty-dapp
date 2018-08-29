@@ -64,10 +64,12 @@ You'll need to ensure you have Metamask installed, I recommend using the latest 
   * See various data from contract including events
 
 ## Unit Tests
-You can run the unit tests with `truffle test` SEE LAST NOTE BELOW
+You can run the unit tests with `truffle test`
 
 ## Notes
 * The `ExchangeRateOracleTests` sometimes fail, this is likely due to the oracle bridge not responding in time.
 * I have managed to publish the site using a docker container, since the build process in the react truffle box is broken annoyingly and I only found this out when I came to deploy
 * You may need to reset the Metamask account if you are getting nonce errors
-* For some reason, the tests sometimes fail, the first time you run them, they run fine the second time.  I could not find the issue.  UPDATE: It appears to be an issue calling web3.eth.getBalance, bizarrely this works the second time around.  Currently investigating further.
+
+## Issues
+* For some reason, the tests were failing the first time you run them, they run fine the second time.  After lots of debugging I found for some reason calling `web3.eth.getBalance` was the issue and replacing with `contract._eth.getBalance` fixed the issue.  This looks like a bug in truffle.

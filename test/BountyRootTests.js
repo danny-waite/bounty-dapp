@@ -16,9 +16,6 @@ let deployedBountyRoot;
 let deployedBountyToken;
 let deployedExchangeRateOracle;
 
-// let bountyTokenAddress;
-// let bountyTokendeployedBountyRoot;
-
 contract('BountyRoot', async (accounts) => {
 
   beforeEach(async ()=> {
@@ -41,7 +38,7 @@ contract('BountyRoot', async (accounts) => {
 
     assert.equal(await deployedBountyRoot.bountyCount(), 0);
     assert.equal((await deployedBountyRoot.bountyTokenAddress()).length, 42);
-    assert.isAbove((await web3.eth.getBalance(deployedBountyRoot.address)).toNumber(), 0);
+    assert.isAbove((await deployedBountyRoot.contract._eth.getBalance(deployedBountyRoot.address)).toNumber(), 0);
 
   });
 
@@ -106,7 +103,7 @@ contract('BountyRoot', async (accounts) => {
     const poster = accounts[3];
     const submitter = accounts[9];
 
-    const beforeBalance = await web3.eth.getBalance(accounts[9]);
+    const beforeBalance = await deployedBountyRoot.contract._eth.getBalance(accounts[9]);
 
     const postBountyResult = await deployedBountyRoot.postBounty("title", "desc", amount, deadline, { from: poster, value: Web3.utils.toWei(amount.toString(), "ether") });
     const bountyId = (await deployedBountyRoot.bountyCount()) - 1;
@@ -134,7 +131,7 @@ contract('BountyRoot', async (accounts) => {
     });
     
     const beforeEther = utils.toEther(beforeBalance);
-    const currentBalance = await web3.eth.getBalance(accounts[9]);
+    const currentBalance = await deployedBountyRoot.contract._eth.getBalance(accounts[9]);
     const currentEther = utils.toEther(currentBalance);
 
     //TODO: confirm balance

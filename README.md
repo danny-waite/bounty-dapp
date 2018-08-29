@@ -38,10 +38,9 @@ The contacts have been deployed to Rinkeby with the contract addresses contained
 2. `yarn install` or `npm install`
 3. ensure you have truffle installed globally with `npm install -g truffle` 
 4. run `truffle develop`
-5. in a new terminal run `npm run bridge-truffle`, this allows us to test the oracle contract locally. You will likely need to replace Line 30 of `ExchangeRateOracle.sol` with the line given when the bridge has initialised.
-6. `npm start` this will start the react development web server and should open your browser to http://localhost:3000 you can also use the app at http://128.1.78.11/
+5. `npm start` this will start the react development web server and should open your browser to http://localhost:3000 you can also use the app at http://128.1.78.11/
 
-## Testing
+## Testing the UI
 You'll need to ensure you have Metamask installed, I recommend using the latest version which provide web3 1.0 as this supports UI refresh when you switch accounts in Metamask.
 
 1. Goto Create Bounty and enter details about your bounty.  If you enable escrow, the prize will be sent with the transaction and stored in the smart contract.
@@ -63,8 +62,15 @@ You'll need to ensure you have Metamask installed, I recommend using the latest 
   * Send tokens from contract to specified address (admin function)
   * See various data from contract including events
 
-## Unit Tests
-You can run the unit tests with `truffle test`
+## Unit Tests within truffle develop
+1. in a new terminal run `npm run bridge-truffle`, this allows us to test the oracle contract locally. You will likely need to replace Line 30 of `ExchangeRateOracle.sol` with the line given when the bridge has initialised.
+2. inside the currently running `truffle develop` console type `test`
+
+## Unit Tests within ganache
+1. make sure ganache-cli is installed with `npm install ganache-cli -g`
+2. in a new terminal run `npm run bridge-ganache`, this allows us to test the oracle contract locally. You will likely need to replace Line 30 of `ExchangeRateOracle.sol` with the line given when the bridge has initialised.
+4. migrate the contracts with `truffle migrate --network ganache`
+3. run the tests with `truffle test --network ganache`
 
 ## Notes
 * The `ExchangeRateOracleTests` sometimes fail, this is likely due to the oracle bridge not responding in time.
